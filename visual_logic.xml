@@ -1,0 +1,114 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="768.5" scrolly="402" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="795.2222294136882" scrolly="405.333336353302" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="stopAnimation" id="HW~Cl3?/5If(m(Pev24T" x="-670" y="-270">
+      <value name="VALUE">
+        <shadow type="animationList" id="fYC]s,4{L`n(U=IkJ=^I">
+          <field name="FIELDNAME">Armature</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="everyFrame" id="di)+R=MkB@%}Js)L/Wx3">
+          <statement name="DO">
+            <block type="whenClicked" id="^Ys9[1D6ur`@OW|f{W9h">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id=".d/C.|V_Y;;GEJ99`5(Q">
+                  <field name="FIELDNAME">Sphere</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="pauseAnimation" id=":9#Utlm%vE3@mEdZNVPy">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="MwL,7RXhJGw=_bPf945r">
+                      <field name="FIELDNAME">Armature</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="go/HNl#Hd4UwfS$i}!W=">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="-H9B[nn5_;On~;1l9X2,">
+                          <field name="FIELDNAME">Armature</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setObjTransform" id="2T`c2G:V85:MG]W$3W^3">
+                          <field name="MODE">position</field>
+                          <field name="OFFSET">FALSE</field>
+                          <value name="TARGETOBJ">
+                            <shadow type="objectList" id="Emol49K{(Pnm(*/`8Yux">
+                              <field name="FIELDNAME">Sphere</field>
+                            </shadow>
+                          </value>
+                          <value name="X">
+                            <block type="math_number" id="nXKDJ~t098Xz3]LUNJbd">
+                              <field name="NUM">3</field>
+                            </block>
+                          </value>
+                          <value name="Y">
+                            <block type="math_number" id="Nlb0r`[P^}{ZU?TD1NMz">
+                              <field name="NUM">-2.5</field>
+                            </block>
+                          </value>
+                          <value name="Z">
+                            <block type="math_number" id="%9/;v-9x]!Y?^Yc?hZ7j">
+                              <field name="NUM">-0.1</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setTimeout" id="7JOp^-WE/+I{`{+gqCSX">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="!R.Q~Ojm,m^,pO1sj.hc">
+                                  <field name="NUM">0.5</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="setObjTransform" id="ifF/rj;#[LGnP5nLUm_/">
+                                  <field name="MODE">position</field>
+                                  <field name="OFFSET">FALSE</field>
+                                  <value name="TARGETOBJ">
+                                    <shadow type="objectList" id="ZJt]/OUeNA=}@1gnRT,d">
+                                      <field name="FIELDNAME">Sphere</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="X">
+                                    <block type="math_number" id="4QdW1LyrZP,Te,q/AmUa">
+                                      <field name="NUM">3</field>
+                                    </block>
+                                  </value>
+                                  <value name="Y">
+                                    <block type="math_number" id="KPMa^#%(:yo^Xg=%T1sT">
+                                      <field name="NUM">-2.5</field>
+                                    </block>
+                                  </value>
+                                  <value name="Z">
+                                    <block type="math_number" id="pyiYAw]xG1E#LPR7Gt,;">
+                                      <field name="NUM">0</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1006.1999999999998" viewport-y="28" viewport-w="682.8" viewport-h="440" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
